@@ -22,8 +22,10 @@ basic.forever(function () {
     }
     if (knuffel < 0 || voeding < 0) {
         dood = 1
+        basic.showIcon(IconNames.Asleep)
     }
     if (dood == 1) {
-        basic.showIcon(IconNames.Asleep)
+        knuffel = -90000
+        voeding = -90000
     }
 })
